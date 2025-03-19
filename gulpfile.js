@@ -14,8 +14,10 @@ export function js( done ){
 
 export function css(done) {
     src('src/scss/app.scss', {sourcemaps: true})
-        .pipe( sass().on('error', sass.logError) )
-        .pipe( dest('build/css', {sourcemaps: '.'})) //de manera exter sourcemaps: '.'
+        .pipe( sass({
+            style: 'compressed' //minificar codigo css
+        }).on('error', sass.logError) )
+        .pipe( dest('build/css', {sourcemaps: '.'})) //de manera exter sourcemaps: '.' e interna con true
 
     done()
 }
