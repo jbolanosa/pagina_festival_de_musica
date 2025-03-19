@@ -15,7 +15,7 @@ export function js( done ){
 export function css(done) {
     src('src/scss/app.scss', {sourcemaps: true})
         .pipe( sass().on('error', sass.logError) )
-        .pipe( dest('build/css', {sourcemaps: true})) //de manera exter sourcemaps: '.'
+        .pipe( dest('build/css', {sourcemaps: '.'})) //de manera exter sourcemaps: '.'
 
     done()
 }
