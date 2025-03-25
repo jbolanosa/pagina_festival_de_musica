@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jbolanosa/pagina_festival_de_musica#readme",
   "devDependencies": {
+    "glob": "^11.0.1",
     "gulp": "^5.0.0",
     "gulp-sass": "^6.0.1",
     "gulp-terser": "^2.1.0",
