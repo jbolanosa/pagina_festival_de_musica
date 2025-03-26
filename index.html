@@ -40,7 +40,11 @@
 
     <section class="sobre-festival">
         <div class="imagen">
-            <img loading="lazy" width="300" height="200" src="src/img/imagen_dj.jpg" alt="Sobre Festival" />
+            <picture>
+                <source srcset="build/img/imagen_dj.avif" />
+                <source srcset="build/img/imagen_dj.webp" />
+                <img loading="lazy" width="300" height="200" src="src/img/imagen_dj.jpg" alt="Sobre Festival" />
+            </picture>
         </div>
 
         <div class="contenido-festival">
